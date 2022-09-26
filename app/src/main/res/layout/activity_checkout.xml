@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="159dp"
+        android:background="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btNavMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:onClick="btnMenu"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/menu"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCurrentUser"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="logout"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonLogout"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrentUser" />
+
+    <TextView
+        android:id="@+id/textViewCurrentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="Current User"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:onClick="logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/ic_baseline_login_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="163dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrentUser" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:backgroundTint="@color/light_orange"
+        android:onClick="cancel"
+        android:text="@string/cancel"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="57dp"
+        android:backgroundTint="@color/green"
+        android:onClick="confirm"
+        android:text="@string/confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

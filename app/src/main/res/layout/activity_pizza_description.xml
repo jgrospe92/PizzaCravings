@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PizzaDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="421dp"
+        android:layout_height="128dp"
+        android:background="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvLargeTopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="44dp"
+        android:text="1 topping"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMediumTopping"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnLargeMinusToppings" />
+
+    <TextView
+        android:id="@+id/tvMediumTopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:text="1 topping"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvLargeTopping"
+        app:layout_constraintStart_toEndOf="@+id/tvSmallTopping"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnMedMinusToppings" />
+
+    <TextView
+        android:id="@+id/tvSmallTopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="7dp"
+        android:text="1 topping"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnSmallMinusToppings" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Pieces"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/tvLargePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Price"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMediumPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tvMediumPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Price"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvSmallPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/tvSmallPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:text="Price"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Medium"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="large"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Toppings"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLargeMinusToppings"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickToppings"
+        app:layout_constraintStart_toEndOf="@+id/tvLargePricePerToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnLargeMinusQTY"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSmallMinusToppings"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickToppings"
+        app:layout_constraintStart_toEndOf="@+id/tvSmallPricePerToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSmallMinusQTY"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvLargePricePerToppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2$+"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnLargeAddToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnLargeMinusQTY" />
+
+    <TextView
+        android:id="@+id/tvSmallPricePerToppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2$+"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnSmallAddToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSmallMinusQTY" />
+
+    <ImageButton
+        android:id="@+id/imgBtnMedMinusToppings"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickToppings"
+        app:layout_constraintStart_toEndOf="@+id/tvMedPricePerToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imageBtnMedMinusQTY"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSmallAddToppings"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickToppings"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageSmallAddQTY"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLargeAddToppings"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickToppings"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnMedMinusToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnLargeAddQTY"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnMedAddToppings"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickToppings"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnSmallMinusToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imageBtnMedAddQTY"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvMedPricePerToppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="2$+"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnMedAddToppings"
+        app:layout_constraintTop_toBottomOf="@+id/imageBtnMedMinusQTY" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Quantity"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageButton
+        android:id="@+id/imageBtnMedAddQTY"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickedQTY"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonSmallMinusQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvMediumPrice"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageBtnMedMinusQTY"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickedQTY"
+        app:layout_constraintStart_toEndOf="@+id/tvMediumQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvMediumPrice"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvLargeQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnLargeAddQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvLargePrice" />
+
+    <TextView
+        android:id="@+id/tvSmallQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageSmallAddQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvSmallPrice" />
+
+    <TextView
+        android:id="@+id/tvMediumQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageBtnMedAddQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvMediumPrice" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSmallMinusQTY"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickedQTY"
+        app:layout_constraintStart_toEndOf="@+id/tvSmallQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvSmallPrice"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLargeMinusQTY"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickedQTY"
+        app:layout_constraintStart_toEndOf="@+id/tvLargeQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvLargePrice"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLargeAddQTY"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickedQTY"
+        app:layout_constraintStart_toEndOf="@+id/imageBtnMedMinusQTY"
+        app:layout_constraintTop_toBottomOf="@+id/tvLargePrice"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageSmallAddQTY"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="btnClickedQTY"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/tvSmallPrice"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:text="Size"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPizzaDesc" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Price"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textViewCurrentPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Current pizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:minHeight="48dp"
+        android:onClick="logout"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/ic_baseline_login_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="logout"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonLogout"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrentUser" />
+
+    <TextView
+        android:id="@+id/textViewCurrentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="Current User"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCurrentPizza"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="412dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/tvPizzaDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCurrentPizza"
+        app:layout_wrapBehaviorInParent="horizontal_only" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Small"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="12dp"
+        android:text="TOTAL:  0.0$"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMediumTopping" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="orderNow"
+        android:text="@string/order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

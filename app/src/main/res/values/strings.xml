@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PizzaCravings</string>
+    <string name="user_name">Enter user name</string>
+    <string name="user_password">Enter user password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="register_btn">REGISTER</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="save">SAVE</string>
+    <string name="menu">Menu</string>
+    <string name="cancel">Cancel</string>
+    <string name="Garden">Garden Delux</string>
+    <string name="hawaiian">Hawaiian Bacon</string>
+    <string name="TheWorks">The Works</string>
+    <string name="Zesty">Zesty Italian</string>
+    <string name="order">Order now</string>
+    <string name="confirm">confirm</string>
+</resources>
