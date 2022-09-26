@@ -11,13 +11,13 @@ import android.widget.Toast;
 public class CheckoutActivity extends AppCompatActivity {
 
     TextView tvTotal;
-
+    String currentUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
 
-        String currentUser = getIntent().getStringExtra("currentUserNameData");
+        currentUser = getIntent().getStringExtra("currentUserNameData");
         TextView textViewCurrentUser = findViewById(R.id.textViewCurrentUser);
         textViewCurrentUser.setText(currentUser);
 
@@ -40,6 +40,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
     public void btnMenu(View view){
         Intent switchActivity = new Intent(this,Menu.class);
+        switchActivity.putExtra(LogInActivity.SEND_DATA,currentUser );
         startActivity(switchActivity);
     }
     public void cancel(View viw){
