@@ -16,5 +16,5 @@
  Feel free to try out my app and if you find a buy, please create an issue and i will do my best to fix it.
 
 
- [wireframe]: img\wireframe.jpg
- [mockup]: img\mockup.jpg
+ [wireframe]:https://github.com/jgrospe92/PizzaCravings/blob/main/img/wireframe.jpg
+ [mockup]: https://github.com/jgrospe92/PizzaCravings/blob/main/img/mockup.jpg
