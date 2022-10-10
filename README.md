@@ -17,5 +17,5 @@
 </p>
 
  # Found a bug?
- Feel free to try out my app and if you find a buy, please create an issue and i will do my best to fix it.
+ Feel free to try out my app and if you find a bug, please create an issue and i will do my best to fix it.
 
